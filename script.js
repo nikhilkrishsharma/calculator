@@ -16,7 +16,7 @@ let arr = Array.from(buttons);
 
         if(e.target.innerHTML == '='  ){
             try {
-                string = eval(string);
+                string = eval(string).toString();
                 input.value = string;
                 records.push(string); // store result
             } catch {
@@ -54,4 +54,5 @@ function history(){
 } catch(error){
     return 'EROR';
 }
+
 }
